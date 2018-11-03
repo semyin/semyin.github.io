@@ -4,7 +4,6 @@ date: 2018-10-06 16:06:04
 tags:
     -Vue
 categories:
-    -Vue相关
 ---
 
 ##  使用VScode格式化.vue文件

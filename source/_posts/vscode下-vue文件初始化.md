@@ -5,7 +5,6 @@ tags:
     -Vue
     -vscode
 categories:
-    -Vue相关
 ---
 
 ## vscode下.vue文件初始化
