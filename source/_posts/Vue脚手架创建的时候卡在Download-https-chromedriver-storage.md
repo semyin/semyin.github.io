@@ -1,5 +1,5 @@
 ---
-title: 'Vue脚手架创建的时候卡在Download https://chromedriver.storage....'
+title: 'Vue脚手架创建项目的时候卡在Download https://chromedriver.storage....'
 date: 2018-11-03 16:13:15
 tags:
     -Vue
