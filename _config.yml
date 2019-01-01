@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 尹盛的个人博客
+title: semyin's blog
 subtitle: 多动手，多思考
 description: 
 keywords:
@@ -74,6 +74,7 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: next
+# theme: hueman
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
