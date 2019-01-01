@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="zh-Hans">
+<html class="theme-next gemini use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -53,16 +53,8 @@
 <link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
 
 
 
@@ -80,12 +72,12 @@
 
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="尹盛的个人博客">
+<meta property="og:title" content="semyin&#39;s blog">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="尹盛的个人博客">
+<meta property="og:site_name" content="semyin&#39;s blog">
 <meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="尹盛的个人博客">
+<meta name="twitter:title" content="semyin&#39;s blog">
 
 
 
@@ -93,7 +85,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Pisces',
+    scheme: 'Gemini',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
@@ -121,7 +113,7 @@
 
 
 
-  <title>尹盛的个人博客</title>
+  <title>semyin's blog</title>
   
 
 
@@ -152,7 +144,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">尹盛的个人博客</span>
+        <span class="site-title">semyin's blog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -268,7 +260,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="尹盛的个人博客">
+      <meta itemprop="name" content="semyin's blog">
     </span>
 
     
@@ -341,17 +333,16 @@
       
         
           
-            <h2 id="npm-安装chromedriver失败解决办法"><a href="#npm-安装chromedriver失败解决办法" class="headerlink" title="npm 安装chromedriver失败解决办法"></a>npm 安装chromedriver失败解决办法</h2><p>在使用Vue-cli新建一个Vue项目的时候，在做完一系列项目init的操作完之后<br><code>npm install</code>有时会出现:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Downloading https://chromedriver.storage.googleapis.com/2.27/chromedriver_mac64.zip</span><br><span class="line">Saving to  /var/folders/7l/mhhqzhps0y59by7pf04nyx5r0000gn/T/chromedriver/chromedriver_mac64.zip</span><br></pre></td></tr></table></figure>
-<p>出现这个的时候，可能会一直卡在这里，什么也做不了，实际上项目的包已经安装好了<br>经分析发现，某些版本下，chromedriver 的 zip 文件 url 的响应是 302 跳转，而在 install.js 里使用的是 Node.js 内置的 http 对象的 get 方法无法处理 302 跳转的情况；而在另外一些情况下，则是因为 googleapis.com 被墙了，此时即使采用科学上网的方法也仍然无法获取文件。</p>
-<p>无论是上述哪种情况，可以使用下面的命令安装：</p>
-<blockquote>
-<p>npm install chromedriver –chromedriver_cdnurl=<a href="http://cdn.npm.taobao.org/dist/chromedriver" target="_blank" rel="noopener">http://cdn.npm.taobao.org/dist/chromedriver</a></p>
-</blockquote>
-<p>或者用cnpm安装包依赖</p>
-<p>文章来自:<a href="https://segmentfault.com/a/1190000008310875" target="_blank" rel="noopener">segmentfault</a></p>
-
-          
+          npm 安装chromedriver失败解决办法在使用Vue-cli新建一个Vue项目的时候，在做完一系列项目init的操作完之后npm install有时会出现:
+12Downloading https://chromedriver.storage.googleapis.com/2.27/chromedriver_mac64.zipSaving to  /var/folders/7l/mhhqzhps0y59by7pf04nyx5r0000gn/T/chromedriver/chromedri
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/11/03/Vue脚手架创建的时候卡在Download-https-chromedriver-storage/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -407,7 +398,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="尹盛的个人博客">
+      <meta itemprop="name" content="semyin's blog">
     </span>
 
     
@@ -480,20 +471,24 @@
       
         
           
-            <h2 id="Vue在安卓低版本的兼容问题"><a href="#Vue在安卓低版本的兼容问题" class="headerlink" title="Vue在安卓低版本的兼容问题"></a>Vue在安卓低版本的兼容问题</h2><p>在弄公司的项目的时候，打包完部署到测试环境上，发现有的低版本安卓有些样式不兼容，甚至有些数据请求不出来。</p>
-<p>网上查了一些方法，现在列出来：</p>
-<h3 id="1-npm-安装-bable-polyfill-es6-promise"><a href="#1-npm-安装-bable-polyfill-es6-promise" class="headerlink" title="1.npm 安装 bable-polyfill es6-promise"></a>1.npm 安装 <code>bable-polyfill</code> <code>es6-promise</code></h3><blockquote>
-</blockquote>
-<pre><code>npm install babel-polyfill  
+          Vue在安卓低版本的兼容问题在弄公司的项目的时候，打包完部署到测试环境上，发现有的低版本安卓有些样式不兼容，甚至有些数据请求不出来。
+网上查了一些方法，现在列出来：
+1.npm 安装 bable-polyfill es6-promise
+
+npm install babel-polyfill  
 npm install es6-promise
-</code></pre><h3 id="2-安装完在项目根目录会出现："><a href="#2-安装完在项目根目录会出现：" class="headerlink" title="2.安装完在项目根目录会出现："></a>2.安装完在项目根目录会出现：</h3><blockquote>
-</blockquote>
-<pre><code>&quot;bable-polyfill&quot;:&quot;^6.xxx&quot;,
-&quot;es6-promise&quot;:&quot;^4.xxx&quot;
-</code></pre><h3 id="3-在项目入口文件main-js引入下面这段代码："><a href="#3-在项目入口文件main-js引入下面这段代码：" class="headerlink" title="3.在项目入口文件main.js引入下面这段代码："></a>3.在项目入口文件<code>main.js</code>引入下面这段代码：</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"import 'bable-polyfill"</span></span><br><span class="line"><span class="string">"import 'es6-promise"</span></span><br></pre></td></tr></table></figure>
-<h3 id="4-在build文件下的webpack-base-conf-js添加下面一段"><a href="#4-在build文件下的webpack-base-conf-js添加下面一段" class="headerlink" title="4.在build文件下的webpack.base.conf.js添加下面一段"></a>4.在<code>build</code>文件下的<code>webpack.base.conf.js</code>添加下面一段</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">    context: path.resolve(__dirname,<span class="string">'../'</span>),</span><br><span class="line">    entry:&#123;</span><br><span class="line">        <span class="comment">// app:'./src/main.js'  //原来的注释掉 换成下面的</span></span><br><span class="line">        app:[<span class="string">"babel-polyfill"</span>,<span class="string">"./src/main.js"</span>]</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="5-重新打包部署，就可以支持低版本的安卓，我测试最低的支持5-0"><a href="#5-重新打包部署，就可以支持低版本的安卓，我测试最低的支持5-0" class="headerlink" title="5.重新打包部署，就可以支持低版本的安卓，我测试最低的支持5.0"></a>5.重新打包部署，就可以支持低版本的安卓，我测试最低的支持5.0</h3>
-          
+2.安装完在项目根目录会出现：
+
+&quot;bable-polyfill&quot;:&quot;^6.xxx&quot;,
+&quot;es6-
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/11/03/Vue在安卓低版本兼容问题/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -549,7 +544,7 @@ npm install es6-promise
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="尹盛的个人博客">
+      <meta itemprop="name" content="semyin's blog">
     </span>
 
     
@@ -684,7 +679,7 @@ npm install es6-promise
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="尹盛的个人博客">
+      <meta itemprop="name" content="semyin's blog">
     </span>
 
     
@@ -757,12 +752,19 @@ npm install es6-promise
       
         
           
-            <h2 id="使用VScode格式化-vue文件"><a href="#使用VScode格式化-vue文件" class="headerlink" title="使用VScode格式化.vue文件"></a>使用VScode格式化.vue文件</h2><p>首先在应用商店搜索“Vetur”插件安装，然后进行下面的操作：</p>
-<blockquote>
-<p>{<br>    “prettier.tabWidth”:4,<br>    “Vetur.format.defaultFormatter.html”:”prettiers”<br>}</p>
-</blockquote>
+          使用VScode格式化.vue文件首先在应用商店搜索“Vetur”插件安装，然后进行下面的操作：
+
+{    “prettier.tabWidth”:4,    “Vetur.format.defaultFormatter.html”:”prettiers”}
+
 
           
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/10/06/vscode格式化vue文件/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -930,7 +932,7 @@ npm install es6-promise
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2018</span>
+        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -948,7 +950,13 @@ npm install es6-promise
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+<div class=BbeiAn-info">
+  粤ICP备 -
+  <a href="http://www.miitbeian.gov.cn/">18145168号-1</a>
+  </a>
+</div>
+
 
 
 
