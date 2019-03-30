@@ -1,5 +1,5 @@
 ---
-title: 'Vue脚手架创建项目的时候卡在Download https://chromedriver.storage....'
+title: 'Vue-cli创建项目的时候卡在下载谷歌驱动问题'
 date: 2018-11-03 16:13:15
 tags:
     -Vue
@@ -9,7 +9,6 @@ tags:
 
 在使用Vue-cli新建一个Vue项目的时候，在做完一系列项目init的操作完之后  
 `npm install`有时会出现:
-
 ```
 Downloading https://chromedriver.storage.googleapis.com/2.27/chromedriver_mac64.zip
 Saving to  /var/folders/7l/mhhqzhps0y59by7pf04nyx5r0000gn/T/chromedriver/chromedriver_mac64.zip
